@@ -1,11 +1,22 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './navbar.css'
 
 function Navbar() {
+
+  // function styleLink() {
+  //   console.log("on style le link")
+  // }
+  // const blueStyle = { color: "blue"}
+
   return (
     <nav className='navbar'>
-      <div>Accueil</div>
-      <div>A propos</div>
+      <NavLink to="/">
+        <div>Accueil</div>
+      </NavLink>
+      <NavLink to="/about" >
+        <div>A propos</div>
+      </NavLink>
     </nav>
   )
 }

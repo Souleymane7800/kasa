@@ -8,3 +8,16 @@
       width: 15%;
       margin-right: 20px;
 }
+
+.navbar a {
+      text-decoration: none;
+      color: #ff6060;
+}
+
+.navbar a:hover {
+      text-decoration: underline;
+}
+
+.navbar a.active {
+      text-decoration: underline;
+}
