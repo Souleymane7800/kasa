@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import Banner from '../../components/Banner/Banner';
+import Banner from '../../layout/Banner/Banner';
 import Gallery from '../../components/Gallery/Gallery';
 
 function Home() {

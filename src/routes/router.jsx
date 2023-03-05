@@ -2,8 +2,8 @@ import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import App from "../App";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Main from "../components/Main/Main";
+import Footer from "../layout/Footer/Footer";
+import Main from "../layout/Main/Main";
 
 const HeaderFooterLayout = () => {
       return <>
