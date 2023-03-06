@@ -1,0 +1,34 @@
+.apartment-page {
+      color: #ff6060;
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+}
+
+/* Mobile */
+@media screen and (width <= 768px) {
+      .apartment__desc_area {
+            display: flex;
+            flex-direction: column;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

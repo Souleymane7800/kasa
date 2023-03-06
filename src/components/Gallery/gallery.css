@@ -9,6 +9,12 @@
       padding: 1rem;
 }
 
+.home__gallery > a {
+      width: 100%;
+      max-width: 20rem;
+      /* flex-direction: column; */
+}
+
 @media screen and (width <= 768px) {
       .home__gallery {
             justify-content: center;

@@ -1,9 +1,9 @@
 import React from 'react';
-import './home.css';
+import './homePage.css';
 import Banner from '../../layout/Banner/Banner';
 import Gallery from '../../components/Gallery/Gallery';
 
-function Home() {
+function HomePage() {
   return (
     <div className='home'>
       <Banner />
@@ -13,4 +13,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomePage

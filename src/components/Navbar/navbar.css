@@ -4,14 +4,16 @@
       align-items: center;
       padding: 0 2rem;
       color: var(--red);
-      font-weight: 700;
+      font-weight: 400;
       width: 15%;
       margin-right: 20px;
+      font-family: "Montserret", sans-serif;
 }
 
 .navbar a {
       text-decoration: none;
       color: #ff6060;
+      /* font-family: "Montserrat", sans-serif; */
 }
 
 .navbar a:hover {
@@ -20,4 +22,15 @@
 
 .navbar a.active {
       text-decoration: underline;
+}
+
+@media screen and (width <= 768px) {
+      .navbar {
+            width: 30%;
+      }
+      .navbar a {
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 200;
+      }
 }

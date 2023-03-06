@@ -1,0 +1,25 @@
+.error-page {
+      color: #ff6060;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+}
+
+h1 {
+      font-size: 15rem;
+      margin-bottom: 0.5rem;
+}
+
+h2 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 8rem;
+}
+
+a {
+      text-decoration: none;
+      color: #ff6060;
+}
+
+a:hover {
+      text-decoration: underline;
+}

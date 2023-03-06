@@ -4,18 +4,13 @@ import './navbar.css'
 
 function Navbar() {
 
-  // function styleLink() {
-  //   console.log("on style le link")
-  // }
-  // const blueStyle = { color: "blue"}
-
   return (
     <nav className='navbar'>
       <NavLink to="/">
         <div>Accueil</div>
       </NavLink>
       <NavLink to="/about" >
-        <div>A propos</div>
+        <div>A Propos</div>
       </NavLink>
     </nav>
   )

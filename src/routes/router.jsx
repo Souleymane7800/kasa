@@ -1,9 +1,12 @@
 import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import App from "../App";
+import HomePage from "../pages/Home/HomePage";
 import Header from "../components/Header/Header";
 import Footer from "../layout/Footer/Footer";
 import Main from "../layout/Main/Main";
+import ApartmentPage from "../pages/apartmentPage/ApartmentPage";
+import About from "../pages/About/About";
+import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 
 const HeaderFooterLayout = () => {
       return <>
@@ -13,24 +16,24 @@ const HeaderFooterLayout = () => {
             </Main>
             <Footer />
       </>
-}
+};
 
 export const router = createBrowserRouter([
       {
             element: <HeaderFooterLayout />,
-            errorElement: <h1>404 not found</h1>,
+            errorElement: <ErrorPage />,
             children: [
                  {
                        path: "/",
-                       element: <App />
+                       element: <HomePage />
                  },
                  {
                    path: "/flat",
-                   element: <h1>Nos appartements</h1>
+                   element: <ApartmentPage />
                  },
                  {
                    path: "/about",
-                   element: <h1>A propos</h1>
+                   element: <About />
                  }
             ]
       },
