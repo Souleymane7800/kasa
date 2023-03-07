@@ -8,9 +8,8 @@ function HomePage() {
     <div className='home'>
       <Banner />
       <Gallery />
-
     </div>
-  )
+  );
 }
 
 export default HomePage

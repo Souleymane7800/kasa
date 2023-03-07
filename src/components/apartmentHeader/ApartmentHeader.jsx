@@ -1,32 +1,37 @@
 import React from 'react';
 import './apartmentHeader.css';
 
-function ApartmentHeader() {
+function ApartmentHeader({ currentApartment }) {
+  
+      // const currentApartment = props.currentApartment;
+      const name = currentApartment.host.name.split(' ');
+      const rating = currentApartment.rating;
+
   return (
       <div className="apartment__header">
             <div className='apartment__title'>
-                  <h1>Paris center,on the romantic Canal Saint Martin</h1>
-                  <h2>Paris, Ile de France</h2>
+                  <h1>{currentApartment.title}</h1>
+                  <p>{currentApartment.location}</p>
                   <div className="apartment__tags">
-                        <span>Cozy</span>
-                        <span>Canal</span>
-                        <span>Paris 10</span>
+                        {currentApartment.tags.map((tag) => (
+                              <span key={tag}>{tag}</span>
+                              ))}
                   </div>
             </div>
             <div className="apartment__owner">
                   <div className="apartment__owner__details">
                         <h3>
-                              <span>Alexandre</span>
-                              <span>Dumas</span>
+                              <span>{name[0]}</span>
+                              <span>{name[1]}</span>
                         </h3>
-                        <div className="apartment__owner__badge"></div>
+                        <div className="apartment__owner__badge">
+                              <img src={currentApartment.host.picture} />
+                        </div>
                   </div>
                   <div className='apartment__owner__stars'>
-                        <span className='on'>★</span>
-                        <span className='on'>★</span>
-                        <span className='on'>★</span>
-                        <span className='off'>★</span>
-                        <span className='off'>★</span>
+                         {[1,2,3,4,5].map((num) => (
+                              <span key={num} className={currentApartment.rating >= num ? "on" : ""}>★</span>
+                         ))}
                   </div>
             </div>
       </div>

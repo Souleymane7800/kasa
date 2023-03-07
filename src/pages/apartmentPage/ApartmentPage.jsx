@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './apartmentPage.css';
 import { DescriptionPanel } from '../../components/DescriptionPanel/DescriptionPanel';
-// import data from '../../data/data.json';
+import datas from '../../data/data.json';
 // import greyStar from '../../assets/grey_star.png';
 import { ImageBanner } from '../../components/ImageBanner/ImageBanner';
 import ApartmentHeader from '../../components/apartmentHeader/ApartmentHeader';
+import { useParams } from 'react-router-dom';
 
 
 
 function ApartmentPage() {
+
+  const [image, setImage] = useState([]);
+
+  const idApartment = useParams("id").id;
+  const currentApartment = datas.filter(data => data.id === idApartment);
+
+  useEffect(() => {
+		const currentApartment = datas.filter(data => data.id === idApartment);
+		setImage(currentApartment[0].pictures);
+	}, [idApartment]);
+
   return (
     <div className='apartment-page'>
-      <ImageBanner />
-      <ApartmentHeader />
-      <div className="apartment__desc_area">
-            <DescriptionPanel />
-            <DescriptionPanel />
+      <ImageBanner imageUrl={currentApartment[0].cover} />
+      <ApartmentHeader currentApartment={currentApartment[0]} />
+      <div className='apartment__desc_area'>
+        <DescriptionPanel title="Description" content={currentApartment[0].description} />
+        <DescriptionPanel title="Equipements" content={currentApartment[0].equipments.map((eq) => (
+          <li>{eq}</li>
+        ))} />
       </div>
     </div>
   );

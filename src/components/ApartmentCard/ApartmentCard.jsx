@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './apartmentCard.css';
+// import datas from '../../data/data.json'
 
-function ApartmentCard() {
+function ApartmentCard({ id, title, cover}) {
+
   return (
-    <Link to="/flat">
+    <Link to={`/flat/${id}`}>
       <div className='apartment'>
-        {/* <img src="https://picsum.photos/300/200" alt='' className='apartment__card__image'/> */}
-        <div className='apartment__subtitle'>Titre de la location</div>
+        <img src={cover} alt={title} className='apartment__card__image'/>
+
+        <h3 className='apartment__subtitle'>{title}</h3>
       </div>
     </Link>
   )

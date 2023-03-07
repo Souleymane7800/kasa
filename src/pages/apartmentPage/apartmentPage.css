@@ -4,6 +4,20 @@
       font-weight: normal;
 }
 
+.image {
+      /* width: ; */
+      height: 300px;
+      object-fit: cover;
+      border-radius: 1rem;
+}
+
+.apartment-page h1 {
+      font-size: 5rem;
+}
+.apartment__desc__area {
+      display: flex;
+      flex-direction: column;
+}
 /* Mobile */
 @media screen and (width <= 768px) {
       .apartment__desc_area {

@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import HomePage from "../pages/Home/HomePage";
+import HomePage from "../pages/HomePage/HomePage";
 import Header from "../components/Header/Header";
 import Footer from "../layout/Footer/Footer";
 import Main from "../layout/Main/Main";
@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
                        element: <HomePage />
                  },
                  {
-                   path: "/flat",
+                   path: "/flat/:id",
                    element: <ApartmentPage />
                  },
                  {

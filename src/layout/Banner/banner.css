@@ -2,7 +2,7 @@
       position: relative;
       background-position: center;
       max-width: 100%;
-      min-height: 140px;
+      min-height: 160px;
       display: grid;
       margin: auto;
       place-items: center;
@@ -23,11 +23,12 @@
 
 .banner__text {
       position: relative;
-      top: 0;
+      /* top: 0; */
       font-style: normal;
       font-size: 30px;
       font-weight: 500;
       align-items: center;
       color: white;
+      display: contents;
 }
 
