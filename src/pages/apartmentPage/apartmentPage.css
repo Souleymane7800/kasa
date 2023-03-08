@@ -15,9 +15,9 @@
       font-size: 5rem;
 }
 .apartment__desc__area {
-      display: flex;
-      flex-direction: column;
+      overflow-y: hidden;
 }
+
 /* Mobile */
 @media screen and (width <= 768px) {
       .apartment__desc_area {

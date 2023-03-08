@@ -23,12 +23,12 @@ function ApartmentPage() {
 
   return (
     <div className='apartment-page'>
-      <ImageBanner imageUrl={currentApartment[0].cover} />
+      <ImageBanner pictures={currentApartment[0].pictures} />
       <ApartmentHeader currentApartment={currentApartment[0]} />
       <div className='apartment__desc_area'>
         <DescriptionPanel title="Description" content={currentApartment[0].description} />
-        <DescriptionPanel title="Equipements" content={currentApartment[0].equipments.map((eq) => (
-          <li>{eq}</li>
+        <DescriptionPanel title="Equipements" content={currentApartment[0].equipments.map((eq, index) => (
+          <li key={index}>{eq}</li>
         ))} />
       </div>
     </div>

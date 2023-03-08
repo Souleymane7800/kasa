@@ -1,6 +1,7 @@
 .description__panel {
       margin-bottom: 1rem;
       flex-basis: 50%;
+      overflow: hidden;
 }
 
 .description__header {
@@ -17,20 +18,45 @@
 }
 
 .description__content {
-      background-color: #F6F6F6;
+      background-color: #d9d7d79c;
       padding: 1rem;
       border-radius: 0.7rem;
       position: relative;
       top: -0.3rem;
       z-index: -1;
+      animation: slide-in 0.8s ease-in-out;
+      /* transform: translateY(-0.3rem);
+      transition: transform 0.3s ease-in-out; */
 }
 
-.fa-solid {
-      font-size: 20px;
-      cursor: pointer;
+@keyframes slide-in {
+      0% {
+            transform: translateY(-50%);
+      }
+      100% {
+            transform: translateY(0%);
+      }
+      
 }
+
+.fa-chevron-down {
+      font-size: 22px;
+      cursor: pointer;
+      color: white;
+}
+
+.fa-chevron-up {
+      font-size: 22px;
+      cursor: pointer;
+      color: white;
+}
+
 
 .apartment__desc_area {
       display: flex;
+      /* flex-direction: column; */
       gap: 1rem;
+      /* overflow: hidden; */
 }
+
+
