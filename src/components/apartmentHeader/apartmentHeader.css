@@ -31,10 +31,6 @@
       color: #ff6060;
 }
 
-/* .apartment__owner__stars .off {
-      color: grey;
-} */
-
 .apartment__title {
       flex-grow: 1;
 }
@@ -42,6 +38,7 @@
 .apartment-page h1 {
       font-weight: 500;
       margin-block: 0;
+      font-size: 36px;
 }
 
 .apartment-page h2 {
@@ -63,7 +60,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(90px, 100px));
       text-align: center;
-      gap: 6rem;
+      gap: 2.5rem;
 }
 
 .apartment__tags span {
@@ -71,7 +68,7 @@
       color: white;
       padding: 0.2em 1em;
       border-radius: 0.5rem;
-      width: 8rem;
+      width: 6rem;
 }
 
 /* Mobile */

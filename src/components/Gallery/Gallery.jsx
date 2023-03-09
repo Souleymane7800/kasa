@@ -1,5 +1,5 @@
 import React from 'react';
-import ApartmentCard from '../ApartmentCard/ApartmentCard';
+import Card from '../Card/Card';
 import './gallery.css';
 import datas from '../../data/data.json'
 
@@ -9,7 +9,7 @@ function Gallery() {
     <section className='home__gallery'>
       {datas.map(data => {
         return (
-          <ApartmentCard
+          <Card
             key={data.id} 
             id={data.id} 
             title={data.title} 
@@ -17,10 +17,6 @@ function Gallery() {
           />
         )
       })}
-      {/* <ApartmentCard />
-      <ApartmentCard/>
-      <ApartmentCard/>
-      <ApartmentCard/> */}
     </section>
   )
 }

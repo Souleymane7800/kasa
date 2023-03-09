@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './imageBanner.css';
+import './slideShow.css';
 import aboutBanner from '../../assets/aboutbannerDesktop.png'
 
-export function ImageBanner(props) {
+export function SlideShow(props) {
 
   // const imageUrl = props.imageUrl ? props.imageUrl: aboutBanner;
   const pictures = props.pictures;
@@ -40,6 +40,7 @@ export function ImageBanner(props) {
       ));
   };
 
+
   return (
 
     <div className='image__banner_img'>
@@ -48,7 +49,7 @@ export function ImageBanner(props) {
       </div>
           {isPicturesAvailable() && 
           <>
-            <button className='btn btn-previous' onClick={moveToPrevious}>
+            <button id='button' className='btn btn-previous' onClick={moveToPrevious}>
               <i className='fas fa-chevron-left'></i>
             </button>
             <span className='slide__counter'>

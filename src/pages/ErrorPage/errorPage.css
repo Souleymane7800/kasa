@@ -10,16 +10,23 @@ h1 {
 }
 
 h2 {
-      font-size: 28px;
-      font-weight: 400;
+      font-size: 32px;
+      font-weight: 500;
       margin-bottom: 8rem;
 }
 
 a {
       text-decoration: none;
       color: #ff6060;
+      text-decoration: underline;
 }
 
-a:hover {
-      text-decoration: underline;
+/* Mobile */
+@media screen and (width <= 768px) {
+      h1 {
+
+      }
+      h2 {
+            
+      }
 }

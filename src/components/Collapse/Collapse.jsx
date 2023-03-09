@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './descriptionPanel.css'
+import './collapse.css'
 
-export function DescriptionPanel(props) {
+export function Collapse(props) {
 
       const [ isShow, setIsShow ] = useState(false);
 
@@ -18,8 +18,7 @@ export function DescriptionPanel(props) {
                         <span>{props.title}</span>
                         <i className={chevronClass}></i>
                   </p>
-                  <p className={contentClass}>{props.content}</p>
-                  {/* 27.09mn */}
+                  {isShow && <p className={contentClass}>{props.content}</p>}
             </div>
       );
 }

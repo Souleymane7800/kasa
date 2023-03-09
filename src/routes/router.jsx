@@ -4,9 +4,10 @@ import HomePage from "../pages/HomePage/HomePage";
 import Header from "../components/Header/Header";
 import Footer from "../layout/Footer/Footer";
 import Main from "../layout/Main/Main";
-import ApartmentPage from "../pages/apartmentPage/ApartmentPage";
+import Logement from "../pages/Logement/Logement";
 import About from "../pages/About/About";
 import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
+
 
 const HeaderFooterLayout = () => {
       return <>
@@ -29,7 +30,7 @@ export const router = createBrowserRouter([
                  },
                  {
                    path: "/flat/:id",
-                   element: <ApartmentPage />
+                   element: <Logement />
                  },
                  {
                    path: "/about",

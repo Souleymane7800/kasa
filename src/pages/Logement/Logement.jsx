@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import './apartmentPage.css';
-import { DescriptionPanel } from '../../components/DescriptionPanel/DescriptionPanel';
+import './logement.css';
+import { Collapse } from '../../components/Collapse/Collapse';
 import datas from '../../data/data.json';
 // import greyStar from '../../assets/grey_star.png';
-import { ImageBanner } from '../../components/ImageBanner/ImageBanner';
+import { SlideShow } from '../../components/SlideShow/SlideShow';
 import ApartmentHeader from '../../components/apartmentHeader/ApartmentHeader';
 import { useParams } from 'react-router-dom';
 
 
 
-function ApartmentPage() {
+function Logement() {
 
   const [image, setImage] = useState([]);
 
@@ -23,11 +23,11 @@ function ApartmentPage() {
 
   return (
     <div className='apartment-page'>
-      <ImageBanner pictures={currentApartment[0].pictures} />
+      <SlideShow pictures={currentApartment[0].pictures} />
       <ApartmentHeader currentApartment={currentApartment[0]} />
       <div className='apartment__desc_area'>
-        <DescriptionPanel title="Description" content={currentApartment[0].description} />
-        <DescriptionPanel title="Equipements" content={currentApartment[0].equipments.map((eq, index) => (
+        <Collapse title="Description" content={currentApartment[0].description} />
+        <Collapse title="Equipements" content={currentApartment[0].equipments.map((eq, index) => (
           <li key={index}>{eq}</li>
         ))} />
       </div>
@@ -35,4 +35,4 @@ function ApartmentPage() {
   );
 }
 
-export default ApartmentPage
+export default Logement

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './apartmentCard.css';
+import './card.css';
 // import datas from '../../data/data.json'
 
 function ApartmentCard({ id, title, cover}) {

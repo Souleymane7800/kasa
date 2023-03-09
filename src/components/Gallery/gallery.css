@@ -5,13 +5,13 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 1rem;
-      padding: 1rem;
+      gap: 1.6rem;
+      padding: 2.5rem;
 }
 
 .home__gallery > a {
-      width: 100%;
-      max-width: 20rem;
+      width: 32%;
+      /* max-width: 20rem; */
       /* flex-direction: column; */
 }
 
