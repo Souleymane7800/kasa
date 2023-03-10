@@ -26,7 +26,8 @@
 
 @media screen and (width <= 768px) {
       .navbar {
-            width: 30%;
+            width: 22%;
+            padding: 0;
       }
       .logo {
             width: 145px;

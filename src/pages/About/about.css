@@ -1,3 +1,10 @@
 .about__container {
       padding-inline: 3rem;
 }
+
+/* Mobile */
+@media screen and (width <= 768px) {
+      .about__container {
+            padding-inline: 0;
+      }
+}

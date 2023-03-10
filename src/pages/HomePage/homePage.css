@@ -3,3 +3,10 @@
       padding-inline: 2rem;
       margin-bottom: 3rem;
 }
+
+/* Mobile */
+@media screen and (width <= 768px) {
+      .home {
+            padding-inline: 0;
+      }
+}

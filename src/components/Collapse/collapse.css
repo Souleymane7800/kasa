@@ -1,10 +1,10 @@
-.description__panel {
+.collapse__panel {
       margin-bottom: 1rem;
       flex-basis: 50%;
       overflow: hidden;
 }
 
-.description__header {
+.collapse__header {
       background-color: #ff6060;
       color: white;
       padding: 0.5em 1em;
@@ -13,11 +13,11 @@
       justify-content: space-between;
 }
 
-.apartment__description p {
+.collapse__description p {
       margin-block: 0;
 }
 
-.description__content {
+.collapse__content {
       background-color: #d9d7d79c;
       padding: 1rem;
       border-radius: 0.7rem;
@@ -40,13 +40,13 @@
       color: white;
 }
 
-
-.apartment__desc_area {
-      display: flex;
-      /* flex-direction: column; */
-      gap: 1rem;
-      /* overflow: hidden; */
+/* Mobile */
+@media screen and (width <= 768px) {
+      .collapse__panel {
+            margin: 0;
+      }
 }
+
 
 
 

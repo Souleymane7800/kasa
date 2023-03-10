@@ -1,4 +1,4 @@
-.apartment-page {
+.logement-page {
       color: #ff6060;
       font-family: "Montserrat", sans-serif;
       font-weight: normal;
@@ -11,16 +11,20 @@
       border-radius: 1rem;
 }
 
-.apartment-page h1 {
+.logement-page h1 {
       font-size: 5rem;
 }
-.apartment__desc__area {
-      overflow-y: hidden;
+
+.logement__desc__area {
+      /* overflow-y: hidden; */
+      display: flex;
+      gap: 1rem;
 }
 
 /* Mobile */
 @media screen and (width <= 768px) {
-      .apartment__desc_area {
+      .ap
+      .logement__desc_area {
             display: flex;
             flex-direction: column;
       }

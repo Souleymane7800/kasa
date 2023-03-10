@@ -2,7 +2,7 @@
       position: relative;
       background-position: center;
       max-width: 100%;
-      min-height: 160px;
+      height: 160px;
       display: grid;
       margin: auto;
       place-items: center;
@@ -32,3 +32,19 @@
       display: contents;
 }
 
+/* Mobile */
+@media screen and (width <= 768px) {
+      .banner {
+            place-items: flex-start;
+            height: 140px;
+            display: flex;
+            align-items: center;
+      }
+      .banner__text {
+            display: flex;
+            font-size: 24px;
+            width: 170px;
+            top: 65px;
+            left: 10px;
+      }
+}

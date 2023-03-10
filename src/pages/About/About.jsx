@@ -13,10 +13,10 @@ function About() {
       <section className="about__container">
         {aboutData.map(data => {
           return (
-            <div key={data.id} className='collapse__content'>
-              <Main>
+            <div key={data.id} className='collapse__panel'>
+              {/* <Main> */}
                 <Collapse title={data.title} content={data.content} />
-              </Main>
+              {/* </Main> */}
             </div>
           )
         })}

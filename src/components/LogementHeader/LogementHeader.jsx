@@ -1,7 +1,7 @@
 import React from 'react';
-import './apartmentHeader.css';
+import './logementHeader.css';
 
-function ApartmentHeader({ currentApartment }) {
+function LogementHeader({ currentApartment }) {
   
       // const currentApartment = props.currentApartment;
       const name = currentApartment.host.name.split(' ');
@@ -38,4 +38,4 @@ function ApartmentHeader({ currentApartment }) {
   )
 }
 
-export default ApartmentHeader
+export default LogementHeader

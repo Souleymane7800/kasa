@@ -9,12 +9,12 @@ export function Collapse(props) {
             setIsShow(!isShow);
       }
 
-      const contentClass = (isShow ? "visible" : "hidden") + " description__content";
+      const contentClass = (isShow ? "visible" : "hidden") + " collapse__content";
       const chevronClass = (isShow ? "fa-chevron-up" : "fa-chevron-down") + " fas";
 
       return (
-            <div className="description__panel">
-                  <p className='description__header' onClick={showContent} >
+            <div className='collapse__panel'>
+                  <p className='collapse__header' onClick={showContent} >
                         <span>{props.title}</span>
                         <i className={chevronClass}></i>
                   </p>
