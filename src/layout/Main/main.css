@@ -1,10 +1,13 @@
 .main {
-      padding: 2rem 0.8rem;
+      padding: 2rem 5rem;
       color: #ff6060;
+      font-family: "Montserrat", sans-serif;
+      max-width: 1240px;
+      margin: 0 auto;
 }
 
 /* Mobile */
-@media screen and (width <= 768px) {
+@media only screen and (width <= 768px) {
       .main {
             padding: 1rem;
       }

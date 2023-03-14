@@ -4,31 +4,23 @@
       font-weight: normal;
 }
 
-.image {
-      /* width: ; */
-      height: 300px;
-      object-fit: cover;
-      border-radius: 1rem;
-}
-
 .logement-page h1 {
       font-size: 5rem;
 }
 
 .logement__desc__area {
-      /* overflow-y: hidden; */
       display: flex;
-      gap: 1rem;
+      gap: 4rem;
 }
 
 /* Mobile */
-@media screen and (width <= 768px) {
-      .ap
-      .logement__desc_area {
-            display: flex;
+@media only screen and (width <= 768px) {
+      .logement__desc__area {
             flex-direction: column;
+            gap: 0.3rem;
       }
 }
+
 
 
 

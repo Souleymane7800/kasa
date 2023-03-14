@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './card.css';
-// import datas from '../../data/data.json'
 
 function Card({ id, title, cover}) {
 

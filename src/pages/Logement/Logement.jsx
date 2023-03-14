@@ -23,11 +23,11 @@ function Logement() {
 
   return (
     <div className='logement-page'>
-      <SlideShow pictures={currentApartment[0].pictures} />
+      <SlideShow pictures={currentApartment[0].pictures} numberPhotos={currentApartment[0].pictures.length} />
       <ApartmentHeader currentApartment={currentApartment[0]} />
-      <div className='logement__desc_area'>
+      <div className='logement__desc__area'>
         <Collapse title="Description" content={currentApartment[0].description} />
-        <Collapse title="Equipements" content={currentApartment[0].equipments.map((eq, index) => (
+        <Collapse title="Équipements" content={currentApartment[0].equipments.map((eq, index) => (
           <li key={index}>{eq}</li>
         ))} />
       </div>

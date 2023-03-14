@@ -9,21 +9,18 @@ function About() {
   console.log("aboutdataaaaaaaaaaaaa", aboutData)
   return (
     <>
+    <div className='about__banner'>
       <SlideShow />
+
+    </div>
       <section className="about__container">
         {aboutData.map(data => {
           return (
             <div key={data.id} className='collapse__panel'>
-              {/* <Main> */}
                 <Collapse title={data.title} content={data.content} />
-              {/* </Main> */}
             </div>
           )
         })}
-            {/* <Collapse title="Fiabilité" content="C'est très important"/>
-            <Collapse title="Respect" content="C'est très important" />
-            <Collapse title="Servive" content="C'est très important" />
-            <Collapse title="Responsabilité" content="C'est très important" /> */}
       </section>
     </>
   )

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './slideShow.css';
-import aboutBanner from '../../assets/aboutbannerDesktop.png'
+import aboutBanner from '../../assets/background.jpg'
 
 export function SlideShow(props) {
 
-  // const imageUrl = props.imageUrl ? props.imageUrl: aboutBanner;
   const pictures = props.pictures;
 
   const [ currentPicture, setCurrentPicture ] = useState(0);
@@ -14,10 +13,12 @@ export function SlideShow(props) {
     return "";
   };
 
+  // Flèche suivante
   const moveToNext = () => {
     setCurrentPicture((currentPicture + 1) % pictures.length);
   };
 
+  // Flèche précédente et retour à la photo 1
   const moveToPrevious = () => {
     const newCurrentPicture = currentPicture - 1;
     if (newCurrentPicture < 0) {
@@ -31,6 +32,7 @@ export function SlideShow(props) {
     return pictures && pictures.length > 0;
   };
 
+  // Carousel ou image par défaut
   const getCarouselorImgDefault = () => {
     if (!isPicturesAvailable()) {
       return <img src={aboutBanner} alt="image banner" className='show' />
@@ -45,19 +47,22 @@ export function SlideShow(props) {
 
     <div className='image__banner_img'>
       <div className="image__container">
+      {/* Condition carousel: nombre de photos et flèches */}
         {getCarouselorImgDefault()}
       </div>
           {isPicturesAvailable() && 
           <>
-            <button id='button' className='btn btn-previous' onClick={moveToPrevious}>
+           {props.numberPhotos > 1 ? <button id='button' className='btn btn-previous' onClick={moveToPrevious}>
               <i className='fas fa-chevron-left'></i>
-            </button>
-            <span className='slide__counter'>
+            </button> : <span></span>}
+
+            {props.numberPhotos > 1 ? <span className='slide__counter'>
               {currentPicture + 1} / {pictures.length}
-            </span>
-            <button className='btn btn-next' onClick={moveToNext}>
+            </span> : <span></span>}
+
+            {props.numberPhotos > 1 ? <button className='btn btn-next' onClick={moveToNext}>
               <i className='fas fa-chevron-right'></i>
-            </button>
+            </button> : <span></span>}
           </>
           }
     </div>
