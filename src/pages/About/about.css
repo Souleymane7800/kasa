@@ -3,6 +3,10 @@
       margin-bottom: 5rem;
 }
 
+.about__img :last-child{
+      height: 16rem;
+}
+
 /* Mobile */
 @media only screen and (width <= 768px) {
       .about__container {

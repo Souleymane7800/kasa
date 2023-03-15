@@ -29,6 +29,7 @@
       animation: slide-in 0.8s ease-in-out;
       list-style-type: none;
       padding-top: 2rem;
+      height: 65%;
 }
 
 .fa-chevron-down {

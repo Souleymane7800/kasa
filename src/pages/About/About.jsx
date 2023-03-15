@@ -2,18 +2,17 @@ import React from 'react';
 import { Collapse } from '../../components/Collapse/Collapse';
 import { SlideShow } from '../../components/SlideShow/SlideShow';
 import './about.css';
-import aboutData from '../../data/aboutData.json'
-import Main from '../../layout/Main/Main'
+import aboutData from '../../data/aboutData.json';
+
 
 function About() {
-  console.log("aboutdataaaaaaaaaaaaa", aboutData)
+
   return (
     <>
-    <div className='about__banner'>
+    <div className='about__img'>
       <SlideShow />
-
     </div>
-      <section className="about__container">
+      <div className="about__container">
         {aboutData.map(data => {
           return (
             <div key={data.id} className='collapse__panel'>
@@ -21,7 +20,7 @@ function About() {
             </div>
           )
         })}
-      </section>
+      </div>
     </>
   )
 }

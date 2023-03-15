@@ -2,6 +2,7 @@
       color: #ff6060;
       font-family: "Montserrat", sans-serif;
       text-align: center;
+      padding-bottom: 2rem;
 }
 
 .error-page div h1 {
@@ -12,13 +13,14 @@
 .error-page div p {
       font-size: 32px;
       font-weight: 500;
-      padding-bottom: 15rem;
+      padding-bottom: 8rem;
 }
 
 .error-page a {
       text-decoration: none;
       color: #ff6060;
       text-decoration: underline;
+
 }
 
 /* Mobile */
