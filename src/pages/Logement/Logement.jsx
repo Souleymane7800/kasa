@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './logement.css';
 import { Collapse } from '../../components/Collapse/Collapse';
 import datas from '../../data/data.json';
-// import greyStar from '../../assets/grey_star.png';
 import { SlideShow } from '../../components/SlideShow/SlideShow';
 import ApartmentHeader from '../../components/LogementHeader/LogementHeader';
 import { useParams } from 'react-router-dom';

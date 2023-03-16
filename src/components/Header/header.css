@@ -5,6 +5,11 @@
       margin-top: 15px;
       margin: 0 auto;
       max-width: 1240px;
+      width: 80%;
+}
+
+.logo {
+      flex: 1;
 }
 
 /* Mobile */
@@ -13,8 +18,8 @@
             width: 100%;
       }
       .logo {
-            width: 110px;
-            height: 40px;
+            width: 125px;
+            height: 45px;
             margin-left: 17px;
       }
 }

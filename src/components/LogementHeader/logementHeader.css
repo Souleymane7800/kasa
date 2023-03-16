@@ -65,7 +65,7 @@
 }
 
 /* Mobile */
-@media screen and (width <= 768px) {
+@media only screen and (width <= 768px) {
             .apartment__header {
                   flex-direction: column;
                   gap: 1rem;
@@ -74,8 +74,8 @@
                   font-size: 21px;
                   font-weight: 500;
             }
-            .apartment__title h1 {
-                  font-size: 21px;
+            .apartment__title p {
+                  font-size: 15px;
             }
             .apartment__tags {
                   display: flex;
@@ -107,4 +107,14 @@
             .apartment__owner__stars {
                   font-size: 1.5rem;
             }
+}
+
+@media only screen and (width <= 480px) {
+      .apartment__title h1 {
+            font-size: 18px;
+            padding-bottom: 0.3rem;
+      }
+      .apartment__tags span{
+            font-size: 10px;
+      }
 }

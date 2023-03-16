@@ -3,7 +3,7 @@ import './logementHeader.css';
 
 function LogementHeader({ currentApartment }) {
   
-      // const currentApartment = props.currentApartment;
+      // Split du nom
       const name = currentApartment.host.name.split(' ');
       const rating = currentApartment.rating;
 

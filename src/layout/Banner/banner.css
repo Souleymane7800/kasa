@@ -53,6 +53,7 @@
             height: 100px;
       }
       .banner__text {
-            font-size: 18px;
+            font-size: 23px;
+            width: 59%;
       }
 }
