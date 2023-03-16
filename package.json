@@ -1,7 +1,7 @@
 {
-  "homepage": "https://souleymane7800.github.io/Kasa",
+  "homepage": "https://souleymane7800.github.io/",
   "name": "kasa",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
