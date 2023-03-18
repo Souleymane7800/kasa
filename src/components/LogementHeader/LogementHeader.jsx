@@ -8,7 +8,7 @@ function LogementHeader({ currentApartment }) {
       const rating = currentApartment.rating;
 
   return (
-      <div className="apartment__header">
+      <section className="apartment__header">
             <div className='apartment__title'>
                   <h1>{currentApartment.title}</h1>
                   <p>{currentApartment.location}</p>
@@ -34,7 +34,7 @@ function LogementHeader({ currentApartment }) {
                          ))}
                   </div>
             </div>
-      </div>
+      </section>
   )
 }
 

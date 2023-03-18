@@ -1,6 +1,7 @@
 .collapse__panel {
       margin-bottom: 1rem;
       flex-basis: 50%;
+      cursor: pointer;
 }
 
 .collapse__header {
