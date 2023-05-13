@@ -1,13 +1,15 @@
 {
+  "homepage": "https://github.com/Souleymane7800/kasa",
   "name": "kasa",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite --port 3000",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
