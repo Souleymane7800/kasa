@@ -75,3 +75,8 @@ lien Figma :  [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Desig
 * Create React App
 * React Router V6
 * Github
+
+
+![kasa](https://github.com/Souleymane7800/kasa/assets/94050676/1f5f48cc-b4ff-49f5-948e-1ddd98a7e9ec)
+
+
